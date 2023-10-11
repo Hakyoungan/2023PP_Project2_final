@@ -98,6 +98,12 @@ label {
     display: block; 
 }
 
+select {
+    width: 42%;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
 input[type="text"] {
     width: 40%;
     padding: 7px;
