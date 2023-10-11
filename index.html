@@ -3,9 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Data</title>
+    <link rel="stylesheet" href="my.css">
 </head>
 <body>
-    <h1>Welcome to Hakyoung's Homepage(22200427)</h1>
+    <div class="header">
+        <img src="studentcard.png" alt="로고 이미지" class="logo">
+        <h1 class="system-title">Students Management System</h1>
+        <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">Student</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        </nav>
+    </div>
+    <hr>
+    <h2>Student List</h2>
+    <div class="search-bar">
+        <input type="text" id="name" placeholder="Enter name">
+        <button class="search-button">Search</button>
+        <button class="add-button" onclick="window.location.href='add.html'">Add</button>
+    </div>
+    
+    
+    <hr>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>name</th>
+                <th>ID</th>
+                <th>major</th>
+                <th>email</th>
+                <th>rc</th>
+                <th>phone-number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>김하나</td>
+                <td>22000427</td>
+                <td>전산전자공학부</td>
+                <td>one@handong.ac.kr</td>
+                <td>Kuyper</td>
+                <td>010-1111-1111</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>김둘</td>
+                <td>22200055</td>
+                <td>법학부</td>
+                <td>two@handong.ac.kr</td>
+                <td>Torey</td>
+                <td>010-2222-2222</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>김셋</td>
+                <td>22300333</td>
+                <td>국제어문학부</td>
+                <td>three@handong.ac.kr</td>
+                <td>Carmichael</td>
+                <td>010-3333-3333</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>김넷</td>
+                <td>22300444</td>
+                <td>전산전자공학부</td>
+                <td>four@handong.ac.kr</td>
+                <td>Kuyper</td>
+                <td>010-4444-4444</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>김다섯</td>
+                <td>22300555</td>
+                <td>콘텐츠융합디자인학부</td>
+                <td>five@handong.ac.kr</td>
+                <td>Jangiryu</td>
+                <td>010-5555-5555</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>김여섯</td>
+                <td>21900666</td>
+                <td>커뮤니케이션학부</td>
+                <td>six@handong.ac.kr</td>
+                <td>Jangiryu</td>
+                <td>010-6666-6666</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>김일곱</td>
+                <td>22100777</td>
+                <td>전산전자공학부</td>
+                <td>seven@handong.ac.kr</td>
+                <td>Kuyper</td>
+                <td>010-7777-7777</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>김여덟</td>
+                <td>22100888</td>
+                <td>기계제어공학부</td>
+                <td>eight@handong.ac.kr</td>
+                <td>Torey</td>
+                <td>010-8888-8888</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>김아홉</td>
+                <td>21900999</td>
+                <td>생명공학부</td>
+                <td>nine@handong.ac.kr</td>
+                <td>Songyangone</td>
+                <td>010-9999-9999</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>김열</td>
+                <td>22100001</td>
+                <td>전산전자공학부</td>
+                <td>ten@handong.ac.kr</td>
+                <td>Kuyper</td>
+                <td>010-0000-0000</td>
+            </tr>
+        </tbody>
+    </table>
+        <p class="real-project">@2023 Real Project</p>
+        <hr>
 </body>
 </html>

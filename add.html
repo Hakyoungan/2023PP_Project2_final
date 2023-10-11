@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Page</title>
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+    <div class="header">
+        <img src="studentcard.png" alt="로고 이미지" class="logo">
+        <h1 class="system-title">Students Management System</h1>
+        <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">Student</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        </nav>
+    </div>
+    <hr>
+    <form name="form1" action="form2_ok.php" onsubmit="return validateForm()" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+    
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id"><br>
+    
+        <label for="major">Major:</label>
+        <input type="text" id="major" name="major"><br>
+    
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br>
+    
+        <label for="rc">RC:</label>
+        <input type="text" id="rc" name="rc"><br>
+    
+        <label for="phone-number">Phone Number:</label>
+        <input type="text" id="phone-number" name="phone-number"><br>
+    
+        <input type="submit" value="추가">
+    </form>
+
+    <script>
+        function validateForm() {
+            var name = document.form1.name.value;
+            var id = document.form1.id.value;
+            var major = document.form1.major.value;
+            var email = document.form1.email.value;
+            var rc = document.form1.rc.value;
+            var phoneNumber = document.form1['phone-number'].value;
+        
+            if (name === "") {
+                alert("Name is required.");
+                document.form1.name.focus();
+                return false;
+            }
+        
+            if (id === "") {
+                alert("ID is required.");
+                document.form1.id.focus();
+                return false;
+            }
+        
+            if (major === "") {
+                alert("Major is required.");
+                document.form1.major.focus();
+                return false;
+            }
+        
+            if (email === "") {
+                alert("Email is required.");
+                document.form1.email.focus();
+                return false;
+            }
+        
+            if (rc === "") {
+                alert("RC is required.");
+                document.form1.rc.focus();
+                return false;
+            }
+        
+            if (phoneNumber === "") {
+                alert("Phone Number is required.");
+                document.form1['phone-number'].focus();
+                return false;
+            }
+        
+            return true; // If all validation passes, allow form submission.
+        }
+    </script>
+     <p class="real-project">@2023 Real Project</p>
+     <hr>
+</body>
+</html>

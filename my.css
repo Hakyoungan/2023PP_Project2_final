@@ -1,0 +1,109 @@
+
+.header {
+    background-color: rgba(138, 174, 237, 0.853);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
+
+.logo {
+    width: 60px;
+    height: 75px;
+    filter: brightness(0) invert(1);
+}
+
+.navigation {
+    margin-left: auto; /* Push the title to the right to create space between title and links */
+}
+
+hr{
+    border:none;
+    border-top:1px solid #6b60606a
+}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom:10px; 
+}
+
+.add-button {
+    background-color: rgba(138, 174, 237, 0.853); 
+    color: white;
+    border: none;
+    padding: 5px 15px; 
+    border-radius: 5px; 
+}
+
+.add-button:hover {
+    background-color: #4874ce; 
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+table, th, td {
+    border: none;
+}
+
+.real-project {
+    color: #747171; /* Set the text color to gray */
+    font-weight: bold; /* Make the text bold */
+    position: absolute;
+    bottom: 0; /* Position at the bottom of the page */
+    text-align: center; /* Center-align the content */
+    width: 100%; /* Ensure it spans the full width of the container */
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #999; /* Set a horizontal line with a light gray color */
+    width: 100%; /* Ensure it spans the full width of the container */
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        display: block; /* Change header to a block-level element for mobile */
+        text-align: center; /* Center-align the content */
+    }
+
+    .header a {
+        display: inline; /* Display navigation links as inline elements for mobile */
+        margin: 10px; /* Add spacing between the links */
+    }
+
+    .system-title {
+        margin-right: 0; /* Remove the right margin for mobile */
+    }
+}
+
+
+  
