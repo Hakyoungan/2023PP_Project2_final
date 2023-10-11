@@ -74,34 +74,34 @@ table, th, td {
 }
 
 .real-project {
-    color: #747171; /* Set the text color to gray */
-    font-weight: bold; /* Make the text bold */
+    color: #747171; 
+    font-weight: bold; 
     position: absolute;
-    bottom: 0; /* Position at the bottom of the page */
-    text-align: center; /* Center-align the content */
-    width: 100%; /* Ensure it spans the full width of the container */
+    bottom: 0;
+    text-align: center; 
+    width: 100%; 
 }
 
 hr {
     border: none;
-    border-top: 1px solid #999; /* Set a horizontal line with a light gray color */
-    width: 100%; /* Ensure it spans the full width of the container */
+    border-top: 1px solid #999; 
+    width: 100%; 
 }
 
 
 
 form {
-    margin: 20px; /* Add spacing around the form elements */
+    margin: 20px;
 }
 
 label {
-    display: block; /* Display labels on separate lines */
+    display: block; 
 }
 
 input[type="text"] {
     width: 40%;
     padding: 7px;
-    margin-bottom: 10px; /* Add spacing between text inputs */
+    margin-bottom: 10px; 
 }
 
 #submit {
@@ -118,8 +118,8 @@ input[type="text"] {
 }
 
 #student-info {
-    background-color: #ffffff; /* 연한 파란색 배경 */
-    border: 2px solid rgba(138, 174, 237, 0.853); /* 파란색 테두리 */
+    background-color: #ffffff; 
+    border: 2px solid rgba(138, 174, 237, 0.853); 
     padding: 15px;
     margin: 20px;
     border-radius: 10px;
@@ -134,12 +134,12 @@ ul {
 
 li {
     margin: 10px 0;
-    font-size: 18px; /* 항목의 글꼴 크기 증가 */
+    font-size: 18px; 
 }
 
 b {
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.853); /* 파란색 텍스트 */
+    color: rgba(0, 0, 0, 0.853); 
 }
 
 #button-container {
@@ -148,19 +148,28 @@ b {
 }
 
 #edit-button, #delete-button {
-    margin: 0 10px; /* 원하는 간격 조정 가능 */
+    margin: 0 10px; 
 }
+
+.info-title{
+    margin-left: 20px;
+}
+
 
 @media (max-width: 768px) {
     .header {
-        display: block; /* Change header to a block-level element for mobile */
-        text-align: center; /* Center-align the content */
+        display: block;
+        text-align: center; 
     }
 
     .header a {
-        display: inline; /* Display navigation links as inline elements for mobile */
-        margin: 10px; /* Add spacing between the links */
+        display: inline; 
+        margin: 10px; 
+
+    .info-title{
+        text-align:center;
     }
+}
 }
 
 
