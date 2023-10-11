@@ -20,7 +20,7 @@
 }
 
 .navigation {
-    margin-left: auto; /* Push the title to the right to create space between title and links */
+    margin-left: auto; 
 }
 
 hr{
@@ -41,7 +41,7 @@ h2 {
     border-radius: 5px; 
 }
 
-.add-button:hover {
+.add-button:hover{
     background-color: #4874ce; 
 }
 
@@ -89,6 +89,68 @@ hr {
 }
 
 
+
+form {
+    margin: 20px; /* Add spacing around the form elements */
+}
+
+label {
+    display: block; /* Display labels on separate lines */
+}
+
+input[type="text"] {
+    width: 40%;
+    padding: 7px;
+    margin-bottom: 10px; /* Add spacing between text inputs */
+}
+
+#submit {
+    background-color: rgba(138, 174, 237, 0.853);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #4874ce;
+}
+
+#student-info {
+    background-color: #ffffff; /* 연한 파란색 배경 */
+    border: 2px solid rgba(138, 174, 237, 0.853); /* 파란색 테두리 */
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 18px; /* 항목의 글꼴 크기 증가 */
+}
+
+b {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.853); /* 파란색 텍스트 */
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#edit-button, #delete-button {
+    margin: 0 10px; /* 원하는 간격 조정 가능 */
+}
+
 @media (max-width: 768px) {
     .header {
         display: block; /* Change header to a block-level element for mobile */
@@ -98,10 +160,6 @@ hr {
     .header a {
         display: inline; /* Display navigation links as inline elements for mobile */
         margin: 10px; /* Add spacing between the links */
-    }
-
-    .system-title {
-        margin-right: 0; /* Remove the right margin for mobile */
     }
 }
 

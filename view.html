@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student View</title>
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+    <div class="header">
+        <img src="studentcard.png" alt="로고 이미지" class="logo">
+        <h1 class="system-title">Students Management System</h1>
+        <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">Student</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        </nav>
+    </div>
+    <hr>
+    <h2>Student Information</h2>
+    <div id="student-info">
+    </div>
+    <div id="button-container">
+        <button id="edit-button">Edit</button>
+        <button id="delete-button">Delete</button>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const studentName = urlParams.get('name');
+
+        const studentInfo = {
+            '김하나': {
+                name:'김하나',
+                id: '22000427',
+                major: '전산전자공학부',
+                email: 'one@handong.ac.kr',
+                rc: 'Kuyper',
+                phoneNumber: '010-1111-1111'
+            },
+            '김둘': {
+                name:'김둘',
+                id: '22200055',
+                major: '법학부',
+                email: 'two@handong.ac.kr',
+                rc: 'Torey',
+                phoneNumber: '010-2222-2222'
+            },
+            '김셋': {
+                name:'김셋',
+                id: '22300333',
+                major: '국제어문학부',
+                email: 'three@handong.ac.kr',
+                rc: 'Carmichael',
+                phoneNumber: '010-3333-3333'
+            },
+            '김넷': {
+                name:'김넷',
+                id: '22300444',
+                major: '전산전자공학부',
+                email: 'four@handong.ac.kr',
+                rc: 'Kuyper',
+                phoneNumber: '010-4444-4444'
+            },
+            '김다섯': {
+                name:'김다섯',
+                id: '22300555',
+                major: '콘텐츠융합디자인학부',
+                email: 'five@handong.ac.kr',
+                rc: 'Jangiryu',
+                phoneNumber: '010-5555-5555'
+            },
+            '김여섯': {
+                name:'김여섯',
+                id: '21900666',
+                major: '커뮤니케이션학부',
+                email: 'six@handong.ac.kr',
+                rc: 'Jangiryu',
+                phoneNumber: '010-6666-6666'
+            },
+            '김일곱': {
+                name:'김일곱',
+                id: '22100777',
+                major: '전산전자공학부',
+                email: 'seven@handong.ac.kr',
+                rc: 'Kuyper',
+                phoneNumber: '010-7777-7777'
+            },
+            '김여덟': {
+                name:'김여덟',
+                id: '22100888',
+                major: '기계제어공학부',
+                email: 'eight@handong.ac.kr',
+                rc: 'Torey',
+                phoneNumber: '010-8888-8888'
+            },
+            '김아홉': {
+                name:'김아홉',
+                id: '21900999',
+                major: '생명공학부',
+                email: 'nine@handong.ac.kr',
+                rc: 'Songyangone',
+                phoneNumber: '010-9999-9999'
+            },
+            '김열': {
+                name:'김열',
+                id: '22100001',
+                major: '전산전자공학부',
+                email: 'ten@handong.ac.kr',
+                rc: 'Kuyper',
+                phoneNumber: '010-0000-0000'
+            }
+        };
+        const studentInfoDiv = document.getElementById('student-info');
+        const infoList = document.createElement('ul');
+
+        const selectedStudentInfo = studentInfo[studentName];
+
+        if (selectedStudentInfo) {
+            for (const [key, value] of Object.entries(selectedStudentInfo)) {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `<b>${key}:</b> ${value}`;
+                infoList.appendChild(listItem);
+            }
+        } else {
+            const errorMessage = document.createElement('p');
+            errorMessage.textContent = '해당 학생 정보를 찾을 수 없습니다.';
+            studentInfoDiv.appendChild(errorMessage);
+        }
+
+        studentInfoDiv.appendChild(infoList);
+        const editButton = document.getElementById('edit-button');
+        editButton.addEventListener('click', () => {
+            window.location.href = 'edit.html?name=' + studentName;
+        });
+
+        const deleteButton = document.getElementById('delete-button');
+        deleteButton.addEventListener('click', () => {
+            const confirmDelete = confirm('게시물을 삭제할까요?');
+            if (confirmDelete) {
+                alert('삭제되었습니다.');
+                window.location.href = 'index.html'; 
+            }
+        });
+    </script>
+    <p class="real-project">@2023 Real Project</p>
+    <hr>
+</body>
+</html>
